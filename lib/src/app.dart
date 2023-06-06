@@ -20,7 +20,7 @@ class _LoginState extends State<Login> {
             child: CircleAvatar(
               radius: 100.0,
               backgroundColor: Colors.grey,
-              backgroundImage: AssetImage('images/foto1.jpg'),
+              backgroundImage: AssetImage('images/logo.jpg'),
             ),
           ),
           Text(
@@ -46,11 +46,12 @@ class _LoginState extends State<Login> {
             child: TextField(
               enableInteractiveSelection: false,
               decoration: InputDecoration(
-                hintText: 'USER-NAME',
-                labelText: 'USER-NAME',
+                hintText: 'Usuario',
+                labelText: 'Usuario',
                 suffixIcon: Icon(Icons.verified_user),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30.0),
+                  
                 ),
               ),
             ),
@@ -63,8 +64,8 @@ class _LoginState extends State<Login> {
             child: TextField(
               enableInteractiveSelection: false,
               decoration: InputDecoration(
-                hintText: 'EMAIL',
-                labelText: 'EMAIL',
+                hintText: 'Gmail',
+                labelText: 'Gmail',
                 suffixIcon: Icon(Icons.alternate_email),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30.0),
@@ -81,8 +82,8 @@ class _LoginState extends State<Login> {
               enableInteractiveSelection: false,
               obscureText: true,
               decoration: InputDecoration(
-                hintText: 'Password',
-                labelText: 'Password',
+                hintText: 'Contraseña',
+                labelText: 'Contraseña',
                 suffixIcon: Icon(Icons.lock_outline),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30.0),
@@ -99,7 +100,7 @@ class _LoginState extends State<Login> {
             child: ElevatedButton(
               onPressed: () {
                 // Acción que se ejecuta al presionar el botón de inicio de sesión
-                print('¡Iniciar sesión presionado!');
+                print('Iniciando Sesion...!');
               },
               child: Text('Iniciar sesión'),
               style: ElevatedButton.styleFrom(
@@ -107,8 +108,8 @@ class _LoginState extends State<Login> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
-                primary: Colors.pink, // Cambio de color del botón a rosa
-                textStyle: TextStyle(color: Colors.white), // Cambio de color del texto del botón a blanco
+                primary: const Color.fromARGB(255, 30, 233, 179), // Cambio de color del botón a rosa
+                textStyle: TextStyle(color: Color.fromARGB(255, 22, 46, 112)), // Cambio de color del texto del botón a blanco
               ),
             ),
           ),
